@@ -13,9 +13,10 @@ serve:
     base_url: http://kratos:4434/
 
 selfservice:
-  default_browser_return_url: http://local.ssn.gg:3000/painel
+  default_browser_return_url: http://local.ssn.gg:3000/dashboard
   allowed_return_urls:
-    - http://local.ssn.gg:3000
+    - http://local.ssn.gg:3000 # website
+    - http://local.ssn.gg:3001 # gatekeeper
 
   methods:
     password:
@@ -26,7 +27,7 @@ selfservice:
       ui_url: http://local.ssn.gg:3000/error
 
     settings:
-      ui_url: http://local.ssn.gg:3000/painel/conta
+      ui_url: http://local.ssn.gg:3000/dashboard/account
       privileged_session_max_age: 15m
 
     recovery:
