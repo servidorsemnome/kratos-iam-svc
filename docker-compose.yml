@@ -47,5 +47,6 @@ services:
       - intranet
 networks:
   intranet:
+    external: true
 volumes:
   kratos-sqlite:
